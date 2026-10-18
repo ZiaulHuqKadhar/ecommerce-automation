@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         maven 'Maven3'   // Manage Jenkins > Tools > Maven installations (name must match)
-        jdk   'JDK17'    // Manage Jenkins > Tools > JDK installations (name must match)
+        jdk   'JDK21'    // Manage Jenkins > Tools > JDK installations (name must match)
     }
 
     triggers {
@@ -44,7 +44,7 @@ pipeline {
     post {
         always {
             junit allowEmptyResults: true, testResults: 'target/surefire-reports/TEST-*.xml'
-            allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
+            allure includeProperties: false, jdk: '', commandline: 'Allure', results: [[path: 'target/allure-results']]
             archiveArtifacts artifacts: 'target/screenshots/**, logs/**', allowEmptyArchive: true
         }
         failure {
