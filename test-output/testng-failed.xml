@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ecommerce Automation Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="API Tests (RestAssured)(failed)">
+    <classes>
+      <class name="tests.BookingApiTest">
+        <methods>
+          <include name="getAuthToken"/>
+          <include name="getDeletedBookingReturns404"/>
+          <include name="deleteBooking"/>
+          <include name="getBooking"/>
+          <include name="updateBooking"/>
+          <include name="createBooking"/>
+        </methods>
+      </class> <!-- tests.BookingApiTest -->
+    </classes>
+  </test> <!-- API Tests (RestAssured)(failed) -->
+</suite> <!-- Failed suite [Ecommerce Automation Suite] -->

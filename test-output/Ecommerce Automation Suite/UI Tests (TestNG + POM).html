@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  UI Tests (TestNG + POM)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UI Tests (TestNG + POM)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 18 18:02:31 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92560 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CheckoutTest.checkoutWithoutDetailsShowsError()'><b>checkoutWithoutDetailsShowsError</b><br>Test class: tests.CheckoutTest<br>Test method: Negative: checkout without shipping details</td>
+<td></td>
+<td>1</td>
+<td>tests.CheckoutTest@b0964b2</td></tr>
+<tr>
+<td title='tests.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: tests.LoginTest<br>Test method: Wrong password shows error</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@4604b900</td></tr>
+<tr>
+<td title='tests.LoginTest.validLogin()'><b>validLogin</b><br>Test class: tests.LoginTest<br>Test method: Valid user can log in</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@4604b900</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: locked_out_user, secret_sauce, locked out</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: , secret_sauce, Username is required</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: problem_user, secret_sauce, SUCCESS</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+<tr>
+<td title='tests.LoginTest.lockedOutUser()'><b>lockedOutUser</b><br>Test class: tests.LoginTest<br>Test method: Locked out user cannot log in</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@4604b900</td></tr>
+<tr>
+<td title='tests.CheckoutTest.completeCheckoutEndToEnd()'><b>completeCheckoutEndToEnd</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>2</td>
+<td>tests.CheckoutTest@b0964b2</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: invalid_user, wrong_pass, do not match</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: standard_user, secret_sauce, SUCCESS</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+<tr>
+<td title='tests.LoginTest.logout()'><b>logout</b><br>Test class: tests.LoginTest<br>Test method: User can log out</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@4604b900</td></tr>
+<tr>
+<td title='tests.CheckoutTest.addProductToCart()'><b>addProductToCart</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckoutTest@b0964b2</td></tr>
+<tr>
+<td title='tests.CheckoutTest.removeProductFromCart()'><b>removeProductFromCart</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckoutTest@b0964b2</td></tr>
+<tr>
+<td title='tests.LoginDataDrivenTest.loginWithMultipleUsers()'><b>loginWithMultipleUsers</b><br>Test class: tests.LoginDataDrivenTest<br>Parameters: standard_user, , Password is required</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginDataDrivenTest@1059754c</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Ecommerce Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>C:\ecommerce-automation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>4 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Ecommerce_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 1 failed,  4 skipped,  23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="hide-methods failed suite-Ecommerce_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Ecommerce_Automation_Suite -->
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="show-methods failed suite-Ecommerce_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Ecommerce_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Ecommerce_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="createBooking">createBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Ecommerce_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="hide-methods skipped suite-Ecommerce_Automation_Suite"> (hide)</a> <!-- hide-methods skipped suite-Ecommerce_Automation_Suite -->
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="show-methods skipped suite-Ecommerce_Automation_Suite"> (show)</a> <!-- show-methods skipped suite-Ecommerce_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Ecommerce_Automation_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="deleteBooking">deleteBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="getBooking">getBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="getDeletedBookingReturns404">getDeletedBookingReturns404</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="updateBooking">updateBooking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Ecommerce_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="hide-methods passed suite-Ecommerce_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Ecommerce_Automation_Suite -->
+                      <a href="#" panel-name="suite-Ecommerce_Automation_Suite" class="show-methods passed suite-Ecommerce_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Ecommerce_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Ecommerce_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="authWithWrongCredentials">authWithWrongCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="checkoutWithoutDetailsShowsError">checkoutWithoutDetailsShowsError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="completeCheckoutEndToEnd">completeCheckoutEndToEnd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="invalidLogin">invalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="lockedOutUser">lockedOutUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(locked_out_user, secret_sauce, locked out)">loginWithMultipleUsers(locked_out_user, secret_sauce, locked out)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(, secret_sauce, Username is required)">loginWithMultipleUsers(, secret_sauce, Username is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(problem_user, secret_sauce, SUCCESS)">loginWithMultipleUsers(problem_user, secret_sauce, SUCCESS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(invalid_user, wrong_pass, do not match)">loginWithMultipleUsers(invalid_user, wrong_pass, do not match)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(standard_user, secret_sauce, SUCCESS)">loginWithMultipleUsers(standard_user, secret_sauce, SUCCESS)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginDataDrivenTest" class="method navigator-link" hash-for-method="loginWithMultipleUsers(standard_user, , Password is required)">loginWithMultipleUsers(standard_user, , Password is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="removeProductFromCart">removeProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;)">runScenario("Successful login with valid credentials", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Complete an order end to end&quot;, &quot;Shopping cart and checkout&quot;)">runScenario("Complete an order end to end", "Shopping cart and checkout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a product to the cart&quot;, &quot;Shopping cart and checkout&quot;)">runScenario("Add a product to the cart", "Shopping cart and checkout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">runScenario("Login fails with invalid data", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">runScenario("Login fails with invalid data", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">runScenario("Login fails with invalid data", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">runScenario("Login fails with invalid data", "Login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.BookingApiTest" class="method navigator-link" hash-for-method="updateWithoutTokenIsForbidden">updateWithoutTokenIsForbidden</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Ecommerce_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Ecommerce_Automation_Suite" class="panel Ecommerce_Automation_Suite">
+          <div class="suite-Ecommerce_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BookingApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBooking">
+                  </a> <!-- createBooking -->
+                  <span class="method-name">createBooking</span>
+                  <div class="stack-trace">java.lang.AssertionError: Create should return 200 expected [200] but found [418]
+	at tests.BookingApiTest.createBooking(BookingApiTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-failed -->
+          <div class="suite-Ecommerce_Automation_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.BookingApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBooking">
+                  </a> <!-- deleteBooking -->
+                  <span class="method-name">deleteBooking</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBooking">
+                  </a> <!-- getBooking -->
+                  <span class="method-name">getBooking</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.BookingApiTest.getBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDeletedBookingReturns404">
+                  </a> <!-- getDeletedBookingReturns404 -->
+                  <span class="method-name">getDeletedBookingReturns404</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.BookingApiTest.getDeletedBookingReturns404() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateBooking">
+                  </a> <!-- updateBooking -->
+                  <span class="method-name">updateBooking</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.BookingApiTest.updateBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-skipped -->
+          <div class="suite-Ecommerce_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart">
+                  </a> <!-- addProductToCart -->
+                  <span class="method-name">addProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutWithoutDetailsShowsError">
+                  </a> <!-- checkoutWithoutDetailsShowsError -->
+                  <span class="method-name">checkoutWithoutDetailsShowsError</span>
+                  <em>
+(Negative: checkout without shipping details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="completeCheckoutEndToEnd">
+                  </a> <!-- completeCheckoutEndToEnd -->
+                  <span class="method-name">completeCheckoutEndToEnd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeProductFromCart">
+                  </a> <!-- removeProductFromCart -->
+                  <span class="method-name">removeProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-passed -->
+          <div class="suite-Ecommerce_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BookingApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authWithWrongCredentials">
+                  </a> <!-- authWithWrongCredentials -->
+                  <span class="method-name">authWithWrongCredentials</span>
+                  <em>
+(Negative: wrong credentials do not give a token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWithoutTokenIsForbidden">
+                  </a> <!-- updateWithoutTokenIsForbidden -->
+                  <span class="method-name">updateWithoutTokenIsForbidden</span>
+                  <em>
+(Negative: update without token is forbidden)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-passed -->
+          <div class="suite-Ecommerce_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Successful login with valid credentials", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful login with valid credentials","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Complete an order end to end&quot;, &quot;Shopping cart and checkout&quot;)">
+                  </a> <!-- runScenario("Complete an order end to end", "Shopping cart and checkout") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Complete an order end to end","Shopping cart and checkout")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add a product to the cart&quot;, &quot;Shopping cart and checkout&quot;)">
+                  </a> <!-- runScenario("Add a product to the cart", "Shopping cart and checkout") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add a product to the cart","Shopping cart and checkout")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Login fails with invalid data", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login fails with invalid data","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Login fails with invalid data", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login fails with invalid data","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Login fails with invalid data", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login fails with invalid data","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login fails with invalid data&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Login fails with invalid data", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login fails with invalid data","Login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-passed -->
+          <div class="suite-Ecommerce_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginDataDrivenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(locked_out_user, secret_sauce, locked out)">
+                  </a> <!-- loginWithMultipleUsers(locked_out_user, secret_sauce, locked out) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,locked out)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(, secret_sauce, Username is required)">
+                  </a> <!-- loginWithMultipleUsers(, secret_sauce, Username is required) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(,secret_sauce,Username is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(problem_user, secret_sauce, SUCCESS)">
+                  </a> <!-- loginWithMultipleUsers(problem_user, secret_sauce, SUCCESS) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(problem_user,secret_sauce,SUCCESS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(invalid_user, wrong_pass, do not match)">
+                  </a> <!-- loginWithMultipleUsers(invalid_user, wrong_pass, do not match) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(invalid_user,wrong_pass,do not match)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(standard_user, secret_sauce, SUCCESS)">
+                  </a> <!-- loginWithMultipleUsers(standard_user, secret_sauce, SUCCESS) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(standard_user,secret_sauce,SUCCESS)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithMultipleUsers(standard_user, , Password is required)">
+                  </a> <!-- loginWithMultipleUsers(standard_user, , Password is required) -->
+                  <span class="method-name">loginWithMultipleUsers</span>
+                  <span class="parameters">(standard_user,,Password is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-passed -->
+          <div class="suite-Ecommerce_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin">
+                  </a> <!-- invalidLogin -->
+                  <span class="method-name">invalidLogin</span>
+                  <em>
+(Wrong password shows error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutUser">
+                  </a> <!-- lockedOutUser -->
+                  <span class="method-name">lockedOutUser</span>
+                  <em>
+(Locked out user cannot log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <em>
+(User can log out)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                  <em>
+(Valid user can log in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Automation_Suite-class-passed -->
+        </div> <!-- panel Ecommerce_Automation_Suite -->
+        <div panel-name="test-xml-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\ecommerce-automation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Ecommerce Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UI Tests (TestNG + POM)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginDataDrivenTest&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Tests (TestNG + POM) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Tests (RestAssured)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BookingApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests (RestAssured) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BDD Tests (Cucumber)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BDD Tests (Cucumber) --&gt;
+&lt;/suite&gt; &lt;!-- Ecommerce Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Ecommerce Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UI Tests (TestNG + POM) (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">API Tests (RestAssured) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BDD Tests (Cucumber) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Ecommerce Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">api</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">authWithWrongCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDeletedBookingReturns404</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateWithoutTokenIsForbidden</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkoutWithoutDetailsShowsError</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">completeCheckoutEndToEnd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">lockedOutUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWithMultipleUsers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeProductFromCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addProductToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">completeCheckoutEndToEnd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getBooking</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Ecommerce Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Ecommerce_Automation_Suite');
+function tableData_Ecommerce_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.TestRunner')
+data.setCell(0, 3, 7693);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.TestRunner')
+data.setCell(1, 3, 6290);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.TestRunner')
+data.setCell(2, 3, 6044);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.TestRunner')
+data.setCell(3, 3, 5752);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.TestRunner')
+data.setCell(4, 3, 5395);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.TestRunner')
+data.setCell(5, 3, 5374);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.TestRunner')
+data.setCell(6, 3, 5135);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logout')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 2473);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'completeCheckoutEndToEnd')
+data.setCell(8, 2, 'tests.CheckoutTest')
+data.setCell(8, 3, 2148);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validLogin')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 2051);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginWithMultipleUsers')
+data.setCell(10, 2, 'tests.LoginDataDrivenTest')
+data.setCell(10, 3, 1916);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginWithMultipleUsers')
+data.setCell(11, 2, 'tests.LoginDataDrivenTest')
+data.setCell(11, 3, 1628);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidLogin')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 1619);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginWithMultipleUsers')
+data.setCell(13, 2, 'tests.LoginDataDrivenTest')
+data.setCell(13, 3, 1448);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'lockedOutUser')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 1387);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginWithMultipleUsers')
+data.setCell(15, 2, 'tests.LoginDataDrivenTest')
+data.setCell(15, 3, 1309);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'loginWithMultipleUsers')
+data.setCell(16, 2, 'tests.LoginDataDrivenTest')
+data.setCell(16, 3, 1223);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginWithMultipleUsers')
+data.setCell(17, 2, 'tests.LoginDataDrivenTest')
+data.setCell(17, 3, 1176);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkoutWithoutDetailsShowsError')
+data.setCell(18, 2, 'tests.CheckoutTest')
+data.setCell(18, 3, 1148);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'updateWithoutTokenIsForbidden')
+data.setCell(19, 2, 'tests.BookingApiTest')
+data.setCell(19, 3, 1132);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'authWithWrongCredentials')
+data.setCell(20, 2, 'tests.BookingApiTest')
+data.setCell(20, 3, 1044);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'removeProductFromCart')
+data.setCell(21, 2, 'tests.CheckoutTest')
+data.setCell(21, 3, 916);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createBooking')
+data.setCell(22, 2, 'tests.BookingApiTest')
+data.setCell(22, 3, 864);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'addProductToCart')
+data.setCell(23, 2, 'tests.CheckoutTest')
+data.setCell(23, 3, 732);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getBooking')
+data.setCell(24, 2, 'tests.BookingApiTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'updateBooking')
+data.setCell(25, 2, 'tests.BookingApiTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'getDeletedBookingReturns404')
+data.setCell(26, 2, 'tests.BookingApiTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'deleteBooking')
+data.setCell(27, 2, 'tests.BookingApiTest')
+data.setCell(27, 3, 0);
+window.suiteTableData['Ecommerce_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Ecommerce_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Ecommerce_Automation_Suite">
+              </div> <!-- times-div-Ecommerce_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Ecommerce Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Ecommerce_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin</span>
+                <span class="method-start">6384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8070 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">lockedOutUser</span>
+                <span class="method-start">14414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">20012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">22895 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">27410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29472 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginDataDrivenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(standard_user, secret_sauce, SUCCESS)</span>
+                <span class="method-start">36119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">38317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(problem_user, secret_sauce, SUCCESS)</span>
+                <span class="method-start">42314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44242 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44778 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(locked_out_user, secret_sauce, locked out)</span>
+                <span class="method-start">48412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49868 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">50445 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(invalid_user, wrong_pass, do not match)</span>
+                <span class="method-start">53962 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55194 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">55668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(, secret_sauce, Username is required)</span>
+                <span class="method-start">59380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">60701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithMultipleUsers(standard_user, , Password is required)</span>
+                <span class="method-start">64815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66004 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">66471 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">69971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductToCart</span>
+                <span class="method-start">71149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">71889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">72387 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">76278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutWithoutDetailsShowsError</span>
+                <span class="method-start">77437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78592 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">82444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">completeCheckoutEndToEnd</span>
+                <span class="method-start">83681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85838 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">86300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginFirst</span>
+                <span class="method-start">89765 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeProductFromCart</span>
+                <span class="method-start">91008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91934 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BookingApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">getAuthToken</span>
+                <span class="method-start">92583 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">authWithWrongCredentials</span>
+                <span class="method-start">100639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWithoutTokenIsForbidden</span>
+                <span class="method-start">101693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createBooking</span>
+                <span class="method-start">102837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getBooking</span>
+                <span class="method-start">103712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateBooking</span>
+                <span class="method-start">103722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteBooking</span>
+                <span class="method-start">103732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getDeletedBookingReturns404</span>
+                <span class="method-start">103739 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@1d957b5a)</span>
+                <span class="method-start">103771 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add a product to the cart", "Shopping cart and checkout")</span>
+                <span class="method-start">104563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Complete an order end to end", "Shopping cart and checkout")</span>
+                <span class="method-start">110859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful login with valid credentials", "Login functionality")</span>
+                <span class="method-start">118554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login fails with invalid data", "Login functionality")</span>
+                <span class="method-start">124310 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login fails with invalid data", "Login functionality")</span>
+                <span class="method-start">129709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login fails with invalid data", "Login functionality")</span>
+                <span class="method-start">135756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login fails with invalid data", "Login functionality")</span>
+                <span class="method-start">140895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">146273 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="23" failed="1" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T18:02:31 IST" name="Ecommerce Automation Suite" finished-at="2026-10-18T18:04:57 IST" duration-ms="146484">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+      <group name="regression">
+        <method signature="CheckoutTest.addProductToCart()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="addProductToCart" class="tests.CheckoutTest"/>
+        <method signature="CheckoutTest.checkoutWithoutDetailsShowsError()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="checkoutWithoutDetailsShowsError" class="tests.CheckoutTest"/>
+        <method signature="CheckoutTest.completeCheckoutEndToEnd()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="completeCheckoutEndToEnd" class="tests.CheckoutTest"/>
+        <method signature="CheckoutTest.removeProductFromCart()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="removeProductFromCart" class="tests.CheckoutTest"/>
+        <method signature="LoginDataDrivenTest.loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" name="loginWithMultipleUsers" class="tests.LoginDataDrivenTest"/>
+        <method signature="LoginTest.invalidLogin()[pri:0, instance:tests.LoginTest@4604b900]" name="invalidLogin" class="tests.LoginTest"/>
+        <method signature="LoginTest.lockedOutUser()[pri:0, instance:tests.LoginTest@4604b900]" name="lockedOutUser" class="tests.LoginTest"/>
+        <method signature="LoginTest.logout()[pri:0, instance:tests.LoginTest@4604b900]" name="logout" class="tests.LoginTest"/>
+        <method signature="LoginTest.validLogin()[pri:0, instance:tests.LoginTest@4604b900]" name="validLogin" class="tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CheckoutTest.addProductToCart()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="addProductToCart" class="tests.CheckoutTest"/>
+        <method signature="CheckoutTest.completeCheckoutEndToEnd()[pri:0, instance:tests.CheckoutTest@b0964b2]" name="completeCheckoutEndToEnd" class="tests.CheckoutTest"/>
+        <method signature="LoginTest.validLogin()[pri:0, instance:tests.LoginTest@4604b900]" name="validLogin" class="tests.LoginTest"/>
+        <method signature="BookingApiTest.createBooking()[pri:1, instance:tests.BookingApiTest@58faa93b]" name="createBooking" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.getBooking()[pri:2, instance:tests.BookingApiTest@58faa93b]" name="getBooking" class="tests.BookingApiTest"/>
+      </group> <!-- smoke -->
+      <group name="api">
+        <method signature="BookingApiTest.authWithWrongCredentials()[pri:0, instance:tests.BookingApiTest@58faa93b]" name="authWithWrongCredentials" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.updateWithoutTokenIsForbidden()[pri:0, instance:tests.BookingApiTest@58faa93b]" name="updateWithoutTokenIsForbidden" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.createBooking()[pri:1, instance:tests.BookingApiTest@58faa93b]" name="createBooking" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.getBooking()[pri:2, instance:tests.BookingApiTest@58faa93b]" name="getBooking" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.updateBooking()[pri:3, instance:tests.BookingApiTest@58faa93b]" name="updateBooking" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.deleteBooking()[pri:4, instance:tests.BookingApiTest@58faa93b]" name="deleteBooking" class="tests.BookingApiTest"/>
+        <method signature="BookingApiTest.getDeletedBookingReturns404()[pri:5, instance:tests.BookingApiTest@58faa93b]" name="getDeletedBookingReturns404" class="tests.BookingApiTest"/>
+      </group> <!-- api -->
+    </groups>
+    <test started-at="2026-10-18T18:02:31 IST" name="UI Tests (TestNG + POM)" finished-at="2026-10-18T18:04:04 IST" duration-ms="92560">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:31 IST" name="setUp" finished-at="2026-10-18T18:02:37 IST" duration-ms="5907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:37 IST" name="invalidLogin" description="Wrong password shows error" finished-at="2026-10-18T18:02:39 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:39 IST" name="tearDown" finished-at="2026-10-18T18:02:42 IST" duration-ms="2444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:42 IST" name="setUp" finished-at="2026-10-18T18:02:45 IST" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="lockedOutUser()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:46 IST" name="lockedOutUser" description="Locked out user cannot log in" finished-at="2026-10-18T18:02:47 IST" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockedOutUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:47 IST" name="tearDown" finished-at="2026-10-18T18:02:47 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:47 IST" name="setUp" finished-at="2026-10-18T18:02:51 IST" duration-ms="3688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logout()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:51 IST" name="logout" description="User can log out" finished-at="2026-10-18T18:02:54 IST" duration-ms="2473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:54 IST" name="tearDown" finished-at="2026-10-18T18:02:54 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:54 IST" name="setUp" finished-at="2026-10-18T18:02:58 IST" duration-ms="4497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:02:59 IST" name="validLogin" description="Valid user can log in" finished-at="2026-10-18T18:03:01 IST" duration-ms="2051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4604b900]" started-at="2026-10-18T18:03:01 IST" name="tearDown" finished-at="2026-10-18T18:03:01 IST" duration-ms="731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.LoginDataDrivenTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:04 IST" name="setUp" finished-at="2026-10-18T18:03:07 IST" duration-ms="3632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:07 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:09 IST" duration-ms="1628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:09 IST" name="tearDown" finished-at="2026-10-18T18:03:09 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:09 IST" name="setUp" finished-at="2026-10-18T18:03:13 IST" duration-ms="3978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:13 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:15 IST" duration-ms="1916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:15 IST" name="tearDown" finished-at="2026-10-18T18:03:16 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:16 IST" name="setUp" finished-at="2026-10-18T18:03:19 IST" duration-ms="3617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:20 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:21 IST" duration-ms="1448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[locked out]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:21 IST" name="tearDown" finished-at="2026-10-18T18:03:22 IST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:22 IST" name="setUp" finished-at="2026-10-18T18:03:25 IST" duration-ms="3511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:25 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:26 IST" duration-ms="1223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[do not match]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:26 IST" name="tearDown" finished-at="2026-10-18T18:03:27 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:27 IST" name="setUp" finished-at="2026-10-18T18:03:30 IST" duration-ms="3701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:30 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:32 IST" duration-ms="1309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:32 IST" name="tearDown" finished-at="2026-10-18T18:03:32 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:32 IST" name="setUp" finished-at="2026-10-18T18:03:36 IST" duration-ms="3596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithMultipleUsers(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:36 IST" name="loginWithMultipleUsers" data-provider="loginData" finished-at="2026-10-18T18:03:37 IST" duration-ms="1176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginDataDrivenTest@1059754c]" started-at="2026-10-18T18:03:37 IST" name="tearDown" finished-at="2026-10-18T18:03:38 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginDataDrivenTest -->
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:38 IST" name="setUp" finished-at="2026-10-18T18:03:41 IST" duration-ms="3490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginFirst()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:41 IST" name="loginFirst" finished-at="2026-10-18T18:03:42 IST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFirst -->
+        <test-method signature="addProductToCart()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:42 IST" name="addProductToCart" finished-at="2026-10-18T18:03:43 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:43 IST" name="tearDown" finished-at="2026-10-18T18:03:43 IST" duration-ms="492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:43 IST" name="setUp" finished-at="2026-10-18T18:03:47 IST" duration-ms="3879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginFirst()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:47 IST" name="loginFirst" finished-at="2026-10-18T18:03:49 IST" duration-ms="1153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFirst -->
+        <test-method signature="checkoutWithoutDetailsShowsError()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:49 IST" name="checkoutWithoutDetailsShowsError" description="Negative: checkout without shipping details" finished-at="2026-10-18T18:03:50 IST" duration-ms="1148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithoutDetailsShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:50 IST" name="tearDown" finished-at="2026-10-18T18:03:50 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:50 IST" name="setUp" finished-at="2026-10-18T18:03:54 IST" duration-ms="3352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginFirst()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:54 IST" name="loginFirst" finished-at="2026-10-18T18:03:55 IST" duration-ms="1235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFirst -->
+        <test-method signature="completeCheckoutEndToEnd()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:55 IST" name="completeCheckoutEndToEnd" finished-at="2026-10-18T18:03:57 IST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeCheckoutEndToEnd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:57 IST" name="tearDown" finished-at="2026-10-18T18:03:57 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:03:57 IST" name="setUp" finished-at="2026-10-18T18:04:01 IST" duration-ms="3452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginFirst()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:04:01 IST" name="loginFirst" finished-at="2026-10-18T18:04:02 IST" duration-ms="1235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFirst -->
+        <test-method signature="removeProductFromCart()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:04:02 IST" name="removeProductFromCart" finished-at="2026-10-18T18:04:03 IST" duration-ms="916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@b0964b2]" started-at="2026-10-18T18:04:03 IST" name="tearDown" finished-at="2026-10-18T18:04:04 IST" duration-ms="544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
+    </test> <!-- UI Tests (TestNG + POM) -->
+    <test started-at="2026-10-18T18:04:04 IST" name="API Tests (RestAssured)" finished-at="2026-10-18T18:04:15 IST" duration-ms="11173">
+      <class name="tests.BookingApiTest">
+        <test-method is-config="true" signature="getAuthToken()[pri:0, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:04 IST" name="getAuthToken" finished-at="2026-10-18T18:04:12 IST" duration-ms="8054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAuthToken -->
+        <test-method signature="authWithWrongCredentials()[pri:0, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:12 IST" name="authWithWrongCredentials" description="Negative: wrong credentials do not give a token" finished-at="2026-10-18T18:04:13 IST" duration-ms="1044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authWithWrongCredentials -->
+        <test-method signature="updateWithoutTokenIsForbidden()[pri:0, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:13 IST" name="updateWithoutTokenIsForbidden" description="Negative: update without token is forbidden" finished-at="2026-10-18T18:04:14 IST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateWithoutTokenIsForbidden -->
+        <test-method signature="createBooking()[pri:1, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:14 IST" name="createBooking" finished-at="2026-10-18T18:04:15 IST" duration-ms="864" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Create should return 200 expected [200] but found [418]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Create should return 200 expected [200] but found [418]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at tests.BookingApiTest.createBooking(BookingApiTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+        <test-method signature="getBooking()[pri:2, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:15 IST" name="getBooking" finished-at="2026-10-18T18:04:15 IST" depends-on-methods="tests.BookingApiTest.createBooking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingApiTest.getBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingApiTest.getBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBooking -->
+        <test-method signature="updateBooking()[pri:3, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:15 IST" name="updateBooking" finished-at="2026-10-18T18:04:15 IST" depends-on-methods="tests.BookingApiTest.createBooking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingApiTest.updateBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingApiTest.updateBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBooking -->
+        <test-method signature="deleteBooking()[pri:4, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:15 IST" name="deleteBooking" finished-at="2026-10-18T18:04:15 IST" depends-on-methods="tests.BookingApiTest.createBooking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.createBooking() on instance tests.BookingApiTest@58faa93b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBooking -->
+        <test-method signature="getDeletedBookingReturns404()[pri:5, instance:tests.BookingApiTest@58faa93b]" started-at="2026-10-18T18:04:15 IST" name="getDeletedBookingReturns404" finished-at="2026-10-18T18:04:15 IST" depends-on-methods="tests.BookingApiTest.deleteBooking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingApiTest.getDeletedBookingReturns404() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingApiTest.getDeletedBookingReturns404() on instance tests.BookingApiTest@58faa93b depends on not successfully finished methods 
+[tests.BookingApiTest.deleteBooking() on instance tests.BookingApiTest@58faa93b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDeletedBookingReturns404 -->
+      </class> <!-- tests.BookingApiTest -->
+    </test> <!-- API Tests (RestAssured) -->
+    <test started-at="2026-10-18T18:04:15 IST" name="BDD Tests (Cucumber)" finished-at="2026-10-18T18:04:57 IST" duration-ms="42637">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:15 IST" name="setUpClass" finished-at="2026-10-18T18:04:16 IST" duration-ms="787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1d957b5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:22 IST" duration-ms="6290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a product to the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart and checkout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:30 IST" duration-ms="7693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete an order end to end"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart and checkout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:35 IST" duration-ms="5752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:41 IST" duration-ms="5395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login fails with invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:47 IST" duration-ms="6044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login fails with invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:52 IST" duration-ms="5135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login fails with invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-18T18:04:57 IST" duration-ms="5374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login fails with invalid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1623bbe5]" started-at="2026-10-18T18:04:57 IST" name="tearDownClass" finished-at="2026-10-18T18:04:57 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- BDD Tests (Cucumber) -->
+  </suite> <!-- Ecommerce Automation Suite -->
+</testng-results>
